@@ -6,6 +6,7 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import FormatListBulletedAddIcon from '@mui/icons-material/FormatListBulletedAdd';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
+import { Cancel } from '@mui/icons-material';
 import SendIcon from '@mui/icons-material/Send';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import InterviewIcon from '@mui/icons-material/RecordVoiceOver';
@@ -245,7 +246,7 @@ const ACTION_CONFIGS = {
                                 text=""
                                 borderColor="#6f2d7a"
                                 bgColor="transparent"
-                                startIcon={<ExitToAppOutlinedIcon sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
+                                startIcon={<Cancel sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
                                 onClick={handleExpandedCancel}
                                 sx={{
                                     width: "40px",
@@ -254,57 +255,57 @@ const ACTION_CONFIGS = {
                                     padding: "8px",
                                     borderRadius: "6px",
                                     border: "1px solid #6f2d7a",
-                                    ml: 1
+                                    // ml: 1
                                 }}
                             />
                         </Tooltip>
                     )
                 },
-                {
-                    component: (
-                        <Tooltip title="Schedule interview">
-                            <CustomButton
-                                text=""
-                                borderColor="#6f2d7a"
-                                bgColor="transparent"
-                                startIcon={<InterviewIcon sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
-                                onClick={() => alert("Interview Scheduled")}
-                                sx={{
-                                    width: "40px",
-                                    height: "40px",
-                                    minWidth: "40px",
-                                    padding: "8px",
-                                    borderRadius: "6px",
-                                    border: "1px solid #6f2d7a",
-                                    mt: 1
-                                }}
-                            />
-                        </Tooltip>
-                    )
-                },
-                {
-                    component: (
-                        <Tooltip title="Archive">
-                            <CustomButton
-                                text=""
-                                borderColor="#6f2d7a"
-                                bgColor="transparent"
-                                startIcon={<ArchiveIcon sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
-                                onClick={() => onArchive?.(row, rowIndex)}
-                                sx={{
-                                    width: "40px",
-                                    height: "40px",
-                                    minWidth: "40px",
-                                    padding: "8px",
-                                    borderRadius: "6px",
-                                    border: "1px solid #6f2d7a",
-                                    ml: 1,
-                                    mt: 1
-                                }}
-                            />
-                        </Tooltip>
-                    )
-                }
+                // {
+                //     component: (
+                //         <Tooltip title="Schedule interview">
+                //             <CustomButton
+                //                 text=""
+                //                 borderColor="#6f2d7a"
+                //                 bgColor="transparent"
+                //                 startIcon={<InterviewIcon sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
+                //                 onClick={() => alert("Interview Scheduled")}
+                //                 sx={{
+                //                     width: "40px",
+                //                     height: "40px",
+                //                     minWidth: "40px",
+                //                     padding: "8px",
+                //                     borderRadius: "6px",
+                //                     border: "1px solid #6f2d7a",
+                //                     mt: 1
+                //                 }}
+                //             />
+                //         </Tooltip>
+                //     )
+                // },
+                // {
+                //     component: (
+                //         <Tooltip title="Archive">
+                //             <CustomButton
+                //                 text=""
+                //                 borderColor="#6f2d7a"
+                //                 bgColor="transparent"
+                //                 startIcon={<ArchiveIcon sx={{ color: "#6f2d7a", marginLeft: "5px" }} />}
+                //                 onClick={() => onArchive?.(row, rowIndex)}
+                //                 sx={{
+                //                     width: "40px",
+                //                     height: "40px",
+                //                     minWidth: "40px",
+                //                     padding: "8px",
+                //                     borderRadius: "6px",
+                //                     border: "1px solid #6f2d7a",
+                //                     ml: 1,
+                //                     mt: 1
+                //                 }}
+                //             />
+                //         </Tooltip>
+                //     )
+                // }
             ] : [
                 {
                     component: (
