@@ -36,3 +36,6 @@ Thumbs.db
 
 # Optional: if using eslint cache
 .eslintcache
+
+# Keep placeholder files to track empty folders
+!.gitkeep
