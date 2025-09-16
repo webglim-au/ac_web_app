@@ -7,8 +7,11 @@ export const sidebarStyles = {
     backgroundColor: isSelected ? "primary.main" : "transparent",
     color: isSelected ? "white" : "primary.main",
     "&:hover": {
-      backgroundColor: isSelected? "primary.main":" transparent",
-      cursor: "pointer"
+      backgroundColor: isSelected? "primary.main" : " transparent",
+      color: isSelected ? "white" : "primary.main",
+      cursor: "pointer",
+     
+
     },
     m: 2,
     marginLeft: 2,
