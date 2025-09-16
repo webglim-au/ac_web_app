@@ -1,7 +1,7 @@
 const styles = {
     container: {
         width: '100%',
-        marginTop: 3,
+        marginTop: "5px",
     },
 
     card: {

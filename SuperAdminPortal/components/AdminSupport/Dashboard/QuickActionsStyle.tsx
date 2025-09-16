@@ -3,10 +3,11 @@
 const styles = {
     // Quick Actions Container
     quickActionsContainer: {
-        margin: 2,
+        margin: "5px",
         marginRight: 0,
         marginLeft: 0,
         padding: 2,
+        paddingBottom: "5px",
         backgroundColor: "white",
         borderRadius: "12px",
         boxShadow: "0px 1px 2px 0px #0000000D",

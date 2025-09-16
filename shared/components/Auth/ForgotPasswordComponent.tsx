@@ -1,10 +1,10 @@
 // components/screens/ForgotPasswordComponent.tsx
 import React, { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import { ScreenLayout } from '../Auth/ScreenLayout'
+import { ScreenLayout } from './ScreenLayout'
 import { FormField } from '../common/FormField';
 import { styles } from './ForgotPasswordComponentStyles';
-import { ForgotPasswordComponentProps } from "../../../shared/types/Auth"
+import { ForgotPasswordComponentProps } from "../../types/Auth"
 
 export const ForgotPasswordComponent = ({ onBack, onContinue }: ForgotPasswordComponentProps) => {
     const [email, setEmail] = useState('');

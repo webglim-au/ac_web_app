@@ -125,11 +125,12 @@ export function JobApplicationsComponent() {
 
     return (
         <>
-            <Box sx={{ marginTop: "20px" }}>
+            <Box sx={{ marginTop: "0px" }}>
                 <ContentSection
                     title="Job Applications"
                     columns={columns}
                     data={applicationsData}
+
                     searchPlaceholder={SEARCH_PLACEHOLDER}
                     onSearch={handleSearch}
                     rowsPerPage={ROWS_PER_PAGE}

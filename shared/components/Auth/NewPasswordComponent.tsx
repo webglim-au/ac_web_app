@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { ScreenLayout } from '@sharedComponents/Auth/ScreenLayout'
 import { FormField } from '@sharedComponents/common/FormField';
 import { styles } from './NewPasswordComponentStyles';
-import { NewPasswordComponentProps } from "../../../shared/types/Auth"
+import { NewPasswordComponentProps } from "../../types/Auth"
 
 export const NewPasswordComponent = ({ onBack, onConfirm }: NewPasswordComponentProps) => {
     const [password, setPassword] = useState('');

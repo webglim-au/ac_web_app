@@ -22,12 +22,12 @@ export function AdminUserManagementPage() {
             <Box
 
                 sx={() => ({
-                    padding: 3,
+                    padding: "5px",
                     // maxWidth: '1400px',
-                    margin: '0 auto',
+                    margin: '0px auto',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: 2,
+                    gap: "5px",
 
                     "@media (max-width: 1210px)": {
 

@@ -104,7 +104,7 @@ const styles = {
       textAlign: "left",
     },
     mainWrapper: {
-      marginTop: "20px",
+      marginTop: "5px",
     },
   } as const;
 

@@ -19,7 +19,7 @@ import { PrescreeningComponent } from '@employeeComponents/HR/recruitment/Prescr
 import { ReferencesComponent } from '@employeeComponents/HR/recruitment/ReferencesComponent';
 import { HRTopItems, HRBottomItems } from "@utils/sidebarMenuItems";
 export function RecruitmentPage() {
-
+    const [searchTerm, setSearchTerm] = useState('');
     const theme = useTheme();
     const [tabs, setTabs] = useState([
         {
@@ -66,18 +66,18 @@ export function RecruitmentPage() {
     };
 
     // --- DYNAMIC RENDER LOGIC ---
-    const renderContent = () => {
+    const renderContent = (searchTerm: string, setSearchTerm: any) => {
         const selectedTab = tabs.find(tab => tab.selected);
         if (!selectedTab) return null;
 
         if (selectedTab.label === "Applications") {
             switch (selectedTab.selectedSubTabIndex) {
-                case 0: return <JobApplicationsComponent />;
-                case 1: return <PrescreeningComponent />;
-                case 2: return <InterviewsComponent />;
-                case 3: return <ReferencesComponent />;
-                case 4: return <BlacklistedComponent />;
-                case 5: return <ArchivedComponent />;
+                case 0: return <JobApplicationsComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 1: return <PrescreeningComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 2: return <InterviewsComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 3: return <ReferencesComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 4: return <BlacklistedComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 5: return <ArchivedComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
                 default: return null;
             }
         }
@@ -100,10 +100,10 @@ export function RecruitmentPage() {
     return (
         <ScreenTemplate topItems={HRTopItems} bottomItems={HRBottomItems}>
 
-            <ScreenHeading title="Recruitment" />
+            {/* <ScreenHeading title="Recruitment" /> */}
             <Box sx={{
 
-                marginLeft: "160px", // or whatever width your sidebar has
+                marginLeft: "165px", // or whatever width your sidebar has
                 [theme.breakpoints.down(1210)]: {
                     marginLeft: "40px"
                 },
@@ -123,7 +123,7 @@ export function RecruitmentPage() {
                 />
 
                 <Box sx={{
-                    flexGrow: 1, backgroundColor: "white", overflow: "auto", height: "calc(100vh - 335px)", mt: 2, borderRadius: "6px", boxShadow: "0px 10px 60px 0px #E2ECF980",
+                    flexGrow: 1, backgroundColor: "white", overflow: "auto", height: "calc(100vh - 235px)", mt: "5px", borderRadius: "6px", boxShadow: "0px 10px 60px 0px #E2ECF980",
 
 
 

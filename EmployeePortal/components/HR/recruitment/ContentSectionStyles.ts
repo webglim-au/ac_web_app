@@ -10,7 +10,8 @@ const STYLES = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: 3,
+        padding: 1,
+
     },
     title: {
         fontWeight: 600,
@@ -60,7 +61,7 @@ const STYLES = {
         display: 'flex',
         justifyContent: 'flex-end',
         padding: 2,
-        mt: 6,
+        mt: 1,
     },
     paginationItem: {
         "&.MuiPaginationItem-root": {

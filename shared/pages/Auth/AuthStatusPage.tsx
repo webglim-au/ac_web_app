@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import CorrectImage from "@assets/images/Correct.png";
 import IncorrectImage from "@assets/images/Incorrect.png";
 import styles from "@sharedPages/Auth/AuthStatusPageStyles"
-import { AuthStatusPageProps } from "../../../shared/types/Auth"
+import { AuthStatusPageProps } from "../../types/Auth"
 const AuthStatusPage = ({
     status,
 

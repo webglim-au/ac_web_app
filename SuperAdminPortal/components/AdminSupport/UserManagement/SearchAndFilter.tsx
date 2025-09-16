@@ -56,6 +56,10 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                             <InputLabel
                                 shrink={!!roleFilter}
                                 sx={{
+                                    backgroundColor: "white",
+                                    paddingLeft: "10px",
+                                    paddingRight: "10px",
+                                    zIndex: 100,
                                     transform: roleFilter ? 'translate(14px, -6px) scale(0.75)' : 'translate(14px, 9px) scale(1)',
                                     transformOrigin: 'top left',
                                     transition: 'transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms',
@@ -66,11 +70,12 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                             <Select
                                 value={roleFilter}
                                 onChange={handleRoleChange}
-                                label="Role"
+                                // label="Role"
                                 size='small'
                                 sx={{
                                     '& .MuiSelect-select': {
                                         display: 'flex',
+                                        width: "100%",
                                         alignItems: 'center',
                                         minHeight: 'unset',
                                     }
@@ -90,6 +95,10 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                             <InputLabel
                                 shrink={!!statusFilter}
                                 sx={{
+                                    backgroundColor: "white",
+                                    paddingLeft: "10px",
+                                    paddingRight: "10px",
+                                    zIndex: 100,
                                     transform: statusFilter ? 'translate(14px, -6px) scale(0.75)' : 'translate(14px, 9px) scale(1)',
                                     transformOrigin: 'top left',
                                     transition: 'transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms',
@@ -101,7 +110,7 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                                 size='small'
                                 value={statusFilter}
                                 onChange={handleStatusChange}
-                                label="Status"
+                                // label="Status"
                                 sx={{
                                     '& .MuiSelect-select': {
                                         display: 'flex',

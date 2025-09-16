@@ -55,10 +55,7 @@ export function PrescreeningComponent() {
         }
     }, [selectedApplicant]);
 
-    const handleSearch = useCallback((searchTerm: string) => {
-        console.log('Searching for:', searchTerm);
-        // TODO: Implement search functionality
-    }, []);
+
 
     const handleModalClose = useCallback(() => {
         setArchiveModalOpen(false);
@@ -78,7 +75,7 @@ export function PrescreeningComponent() {
                     columns={columns}
                     data={applicationsData}
                     searchPlaceholder="Search"
-                    onSearch={handleSearch}
+
                     onArchive={handleArchiveClick}
                     rowsPerPage={ROWS_PER_PAGE}
                     renderExpandedContent={renderExpandedContent}

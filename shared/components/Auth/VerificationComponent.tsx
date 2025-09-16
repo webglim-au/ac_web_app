@@ -4,7 +4,7 @@ import { Box, Button, Typography } from '@mui/material';
 import { ScreenLayout } from '@sharedComponents/Auth/ScreenLayout';
 import { VerificationInput } from '@sharedComponents/common/VerificationInput';
 import { styles } from './VerificationComponentStyles';
-import { VerificationComponentProps } from "../../../shared/types/Auth"
+import { VerificationComponentProps } from "../../types/Auth"
 
 export const VerificationComponent = ({
     email,

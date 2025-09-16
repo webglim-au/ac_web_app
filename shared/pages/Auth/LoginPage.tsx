@@ -13,7 +13,7 @@ const LoginPage = () => {
     const navigate = useNavigate();
     useEffect(() => {
         console.log("userType", userType)
-    }, [userType])
+    })
     const handleLogin = (email: string, password: string, remember: boolean, userType: string) => {
         // Store user type for later use
         setUserType(userType);
@@ -28,7 +28,7 @@ const LoginPage = () => {
         );
     };
     const handleVerification = (code: string, isFromLogin: boolean, userTypeParam: string) => {
-        console.log("in login function", userTypeParam, userType)
+        console.log("in login function", userTypeParam)
         if (isFromLogin) {
             // Navigate based on user type
             if (userTypeParam === 'admin') {

@@ -171,7 +171,7 @@ const CalendarWithTasks = () => {
                 sx={calendarWithTasksStyles.customDay(selected)}
             >
                 {format(day, 'd')}
-                {taskCount > 0 && (
+                {/* {taskCount > 0 && (
                     <Box sx={calendarWithTasksStyles.taskDots}>
                         {Array.from({ length: taskCount }).map((_, index) => (
                             <Box
@@ -180,7 +180,7 @@ const CalendarWithTasks = () => {
                             />
                         ))}
                     </Box>
-                )}
+                )} */}
             </PickersDay>
         );
     };

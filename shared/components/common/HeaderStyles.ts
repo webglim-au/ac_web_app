@@ -83,6 +83,7 @@ export const headerStyles: Record<string, SxProps<Theme>> = {
   userContainer: {
     display: "flex",
     alignItems: "center",
+ 
   },
 
   notificationIcon: {
@@ -97,7 +98,10 @@ export const headerStyles: Record<string, SxProps<Theme>> = {
 
   userInfo: {
     textAlign: "right",
+
     ml: 1, // little spacing before text
+    padding:1,
+       borderColor: "1px solid grey"
   },
 
   userName: {

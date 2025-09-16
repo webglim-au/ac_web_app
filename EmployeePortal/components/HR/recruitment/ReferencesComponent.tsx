@@ -118,9 +118,7 @@ export function ReferencesComponent() {
             <Box sx={styles.contentContainer}>
                 {/* Header */}
                 <Box sx={styles.headerContainer}>
-                    <Typography sx={styles.headerTitle}>
-                        Reference Center
-                    </Typography>
+
                     <TextField
                         size="small"
                         placeholder="Search applicant or referee"
