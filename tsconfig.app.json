@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/app/main.tsx.tsx"]
+  "include": ["/", "/shared/app/main.tsx", "/EmployeePortal/app/main.tsx", "/SuperAdminPortal/app/main.tsx"]
 }

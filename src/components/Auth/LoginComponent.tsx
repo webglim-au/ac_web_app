@@ -106,14 +106,14 @@ export const LoginComponent = ({ onForgotPassword, onLogin }: LoginComponentProp
                 </Button>
             </Box>
 
-            <Box sx={styles.infoBox}>
+            {/* <Box sx={styles.infoBox}>
                 <Typography color="text.lighterGrey" style={styles.infoText}>
                     Don't have an account?
                 </Typography>
                 <Typography color="text.secondary" style={styles.contactText}>
                     Contact your employer for access
                 </Typography>
-            </Box>
+            </Box> */}
         </ScreenLayout>
     );
 };
