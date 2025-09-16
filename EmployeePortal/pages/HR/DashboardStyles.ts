@@ -16,10 +16,11 @@ export const dashboardStyles = {
 
   bodyContainer: (theme: Theme) => ({
     display: "flex",
-    maxHeight: "calc(100vh - 335px)",
+    maxHeight: "calc(100vh - 350px)",
     width: "100%",
     flexDirection: "row",
     gap: 0,
+   
     [theme.breakpoints.down(850)]: {
       flexDirection: "column",
       ml:2
@@ -29,7 +30,8 @@ export const dashboardStyles = {
 
     mainContent: (theme: Theme) => ({
       flexGrow: 1,
-      p: 2,
+      p: "5px",
+      pl:"15px",
       marginTop: "0px",
      marginLeft: "150px", // or whatever width your sidebar has
       [theme.breakpoints.down(1210)]: {
@@ -52,13 +54,13 @@ export const dashboardStyles = {
     }) as SxProps<Theme>,
   contentSection: {
     display: "flex",
-    gap: 2
+    gap: 0
   } as SxProps<Theme>,
 
   calendarContainer: {
     width: "340px",
-    marginTop: 2,
-    marginRight: 2,
+    marginTop: "5px",
+    marginRight: "5px",
     
     "@media (max-width: 850px)": {
         width: "100%",

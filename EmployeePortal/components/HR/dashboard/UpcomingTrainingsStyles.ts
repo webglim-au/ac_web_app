@@ -2,11 +2,11 @@ import { SxProps, Theme } from '@mui/material';
 
 export const upcomingTrainingsStyles = {
   container: {
-    flex: 2,
+    flex: 1,
     backgroundColor: "white",
     boxShadow: "0px 4px 8px 0px #0000002E",
     borderRadius: "6px",
-    height: "100vh",
+    maxHeight: "710px",
   //  height: "calc(100vh - 350px)",
     // "@media (max-height:768px)": {
     //   height: "calc(100vh+ 100vh)",
@@ -25,8 +25,8 @@ export const upcomingTrainingsStyles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 3,
-    mb: 2,
+    padding: "15px",
+    mb: 1,
     paddingLeft: 0,
     paddingRight: 0,
     borderBottom: "1px solid rgba(43, 33, 33, 0.1)",

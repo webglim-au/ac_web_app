@@ -78,7 +78,7 @@ export default function Header() {
                         />
 
                         {/* Inline name + role (sm+) */}
-                        <Box
+                        <Box onClick={handleOpenMenu}
                             sx={{
                                 ...headerStyles.userInfo,
                                 display: { xs: "none", sm: "block" },
@@ -87,11 +87,11 @@ export default function Header() {
                             <Typography sx={headerStyles.userName}>
                                 Hi, Olivia Rhye
                             </Typography>
-                            <Typography sx={headerStyles.userRole}>HR Manager</Typography>
+                            <Typography sx={headerStyles.userRole}>Admin</Typography>
                         </Box>
 
                         {/* Dropdown Arrow */}
-                        <IconButton onClick={handleOpenMenu} sx={{ p: 0 }}>
+                        <IconButton sx={{ p: 0 }}>
                             <Box
                                 src={HeaderArrow}
                                 component="img"
@@ -133,10 +133,10 @@ export default function Header() {
                 transformOrigin={{ vertical: "top", horizontal: "right" }}
             >
                 {/* User info (xs only) */}
-                <MenuItem disabled sx={{ display: "flex" }}>
+                <MenuItem sx={{ display: "flex" }}>
                     <Box>
-                        <Typography sx={headerStyles.userName}>Hi, Olivia Rhye</Typography>
-                        <Typography sx={headerStyles.userRole}>HR Manager</Typography>
+                        <Typography sx={headerStyles.userName}>Olivia Rhye</Typography>
+                        <Typography sx={headerStyles.userRole}>Admin</Typography>
                     </Box>
                 </MenuItem>
 

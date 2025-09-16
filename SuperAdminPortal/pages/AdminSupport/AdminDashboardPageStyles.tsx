@@ -4,11 +4,11 @@ const additionalLayoutStyles = {
     // Two Column Row Layout
     twoColumnRow: {
         display: 'flex',
-        gap: 3,
-        marginTop: 3,
+        gap: "5px",
+        // marginTop: "5px",
         '@media (max-width: 1024px)': {
             flexDirection: 'column',
-            gap: 2,
+            gap: "5px",
         }
     },
 
@@ -25,7 +25,7 @@ const additionalLayoutStyles = {
     // Full Width Column
     columnFull: {
         width: '100%',
-        marginTop: 3,
+        marginTop: "5px",
     }
 };
 
@@ -33,16 +33,16 @@ const additionalLayoutStyles = {
 const completeStyles = {
     // ... your existing styles
     pageContainer: {
-        padding: 3,
+        padding: "5px",
         maxWidth: '1400px',
-        margin: '0 auto',
+        margin: 'auto 15px',
         display: 'flex',
         flexDirection: 'column',
-        gap: 2,
-
+        gap: "5px",
+        marginTop: "10px",
         "@media (max-width: 1210px)": {
 
-            gap: 1,
+            gap: "5px",
         }
     },
 
@@ -52,7 +52,7 @@ const completeStyles = {
 
     cardsWrapper: {
         display: 'flex',
-        gap: 2,
+        gap: "5px",
         flexWrap: 'wrap',
         justifyContent: 'space-between',
         '@media (max-width: 768px)': {

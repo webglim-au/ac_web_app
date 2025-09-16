@@ -78,7 +78,7 @@ export default function Header() {
                         />
 
                         {/* Inline name + role (sm+) */}
-                        <Box
+                        <Box onClick={handleOpenMenu}
                             sx={{
                                 ...headerStyles.userInfo,
                                 display: { xs: "none", sm: "block" },
@@ -91,7 +91,7 @@ export default function Header() {
                         </Box>
 
                         {/* Dropdown Arrow */}
-                        <IconButton onClick={handleOpenMenu} sx={{ p: 0 }}>
+                        <IconButton sx={{ p: 0 }}>
                             <Box
                                 src={HeaderArrow}
                                 component="img"
@@ -133,9 +133,9 @@ export default function Header() {
                 transformOrigin={{ vertical: "top", horizontal: "right" }}
             >
                 {/* User info (xs only) */}
-                <MenuItem disabled sx={{ display: "flex" }}>
+                <MenuItem sx={{ display: "flex" }}>
                     <Box>
-                        <Typography sx={headerStyles.userName}>Hi, Olivia Rhye</Typography>
+                        <Typography sx={headerStyles.userName}> Olivia Rhye</Typography>
                         <Typography sx={headerStyles.userRole}>HR Manager</Typography>
                     </Box>
                 </MenuItem>
@@ -143,12 +143,12 @@ export default function Header() {
                 <Divider />
 
                 {/* Settings */}
-                <MenuItem onClick={() => handleNavigate("/settings")}>
+                <MenuItem onClick={() => handleNavigate("/hr/settings")}>
                     Settings
                 </MenuItem>
 
                 {/* Logout */}
-                <MenuItem onClick={() => handleNavigate("/logout")}>
+                <MenuItem onClick={() => handleNavigate("/")}>
                     Logout
                 </MenuItem>
             </Menu>

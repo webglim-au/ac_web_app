@@ -10,7 +10,7 @@ const SEARCH_PLACEHOLDER = "Search";
 // Styles
 const STYLES = {
     container: {
-        marginTop: "20px"
+        marginTop: "5px"
     }
 } as const;
 

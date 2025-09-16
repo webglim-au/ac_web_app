@@ -5,7 +5,7 @@ const styles = {
     flexDirection: 'row',
     bgcolor: 'white',
     borderRadius: '6px',
-    padding: 1,
+    padding: "5px",
     justifyContent: 'space-between'
   },
 
@@ -19,7 +19,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'row',
-    padding: 3,
+    padding: "5px",
     paddingRight: 0
   },
 
@@ -31,6 +31,7 @@ const styles = {
 
   searchField: {
     width: 440,
+    marginBottom: "5px",
     '& .MuiInputBase-root': {
       backgroundColor: '#EDEFF8',
       borderRadius: '8px',

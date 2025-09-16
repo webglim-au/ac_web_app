@@ -24,7 +24,7 @@ export const screenTemplateStyles = {
     screenMainContent: (theme: Theme) => ({
       flexGrow: 1,
       p: 2,
-      marginTop: "90px",
+      marginTop: "70px",
      marginLeft: "300px",
       [theme.breakpoints.down(1210)]: {
        

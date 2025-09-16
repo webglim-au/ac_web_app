@@ -1,10 +1,10 @@
 
 import { Box } from '@mui/material';
-import { Logo } from '../Auth/Logo';
+import { Logo } from './Logo';
 import { Copyright } from './Copyright';
 import sectionImg from '@assets/images/Section.png';
 import { styles } from './ScreenLayoutStyles';
-import { ScreenLayoutProps } from "../../../shared/types/Auth";
+import { ScreenLayoutProps } from "../../types/Auth";
 
 export const ScreenLayout = ({ children }: ScreenLayoutProps) => (
     <Box

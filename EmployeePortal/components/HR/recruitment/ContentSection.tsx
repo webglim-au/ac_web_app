@@ -183,9 +183,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         <Box sx={STYLES.container}>
             {/* Header with Title and Search */}
             <Box sx={STYLES.header}>
-                <Typography sx={STYLES.title}>
-                    {title}
-                </Typography>
+
                 <TextField
                     size="small"
                     placeholder={searchPlaceholder}

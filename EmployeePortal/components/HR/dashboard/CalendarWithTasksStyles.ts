@@ -12,7 +12,7 @@ export const calendarWithTasksStyles = {
     borderRadius: "6px",
     width: "335px",
     boxShadow: '0px 4px 4px 0px #00000040',
-    mb: 3,
+    mb: "5px",
 
     '& .MuiPickersCalendarHeader-root': {
       display: 'grid',
@@ -126,7 +126,7 @@ export const calendarWithTasksStyles = {
     p: 3,
     mx: 'auto',
     overflow: "auto",
-    height: "100%",
+    maxHeight: "500px",
     mb:2,
     "@media (max-width: 850px)": {
       width: "90%",

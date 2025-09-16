@@ -47,11 +47,11 @@ const MainTab: React.FC<MainTabProps> = ({ tabs, onTabClick, onSubTabClick, font
                 backgroundColor: 'white',
                 border: '1px solid #CED4DA',
                 borderRadius: '6px',
-                padding: 3
+                padding: 2
             }}
         >
             {/* Main Tabs */}
-            <Box sx={{ display: 'flex', gap: 1, marginBottom: 3 }}>
+            <Box sx={{ display: 'flex', gap: 1, marginBottom: 2 }}>
                 {tabs.map((tab, index) => {
                     const iconWithColor = tab.selected
                         ? React.cloneElement(tab.icon, {
@@ -89,6 +89,7 @@ const MainTab: React.FC<MainTabProps> = ({ tabs, onTabClick, onSubTabClick, font
                         >
                             {tab.label}
                         </Button>
+
                     );
                 })}
             </Box>

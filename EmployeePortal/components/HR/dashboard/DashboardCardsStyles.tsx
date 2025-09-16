@@ -2,7 +2,7 @@ const styles = {
     container: {
         display: "flex",
         gap: 2,
-        mb: 4,
+        mb: "5px",
         flexWrap: "wrap",
 
         // Default: all cards in one row, flexible sizing

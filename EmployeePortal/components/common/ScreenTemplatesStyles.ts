@@ -20,11 +20,11 @@ export const screenTemplateStyles = {
     maxHeight: "calc(100vh - 335px)",
     width: "100%",
     flexDirection: "row",
-    gap:1 } as SxProps<Theme>,
+    gap:0 } as SxProps<Theme>,
     screenMainContent: (theme: Theme) => ({
       flexGrow: 1,
       p: 2,
-      marginTop: "90px",
+      marginTop: "80px",
      marginLeft: "150px", // or whatever width your sidebar has
       [theme.breakpoints.down(1210)]: {
        

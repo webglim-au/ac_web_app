@@ -1,9 +1,10 @@
 const userTableStyles = {
     container: {
-        p: 3,
+        p: "20px",
         backgroundColor: "white",
         borderRadius: 2,
-        m: 2,
+        m: "10px",
+        mt: "0px"
     },
     header: {
         display: 'flex',
@@ -154,7 +155,9 @@ const userTableStyles = {
     actionsContainer: {
         display: 'flex',
         gap: 0,
-        justifyContent: 'flex-end'
+        width: "80px",
+        margin: "auto",
+        justifyContent: 'space-between'
     },
     actionIcon: {
         width: 20,

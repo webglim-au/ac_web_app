@@ -1,6 +1,6 @@
 const STYLES = {
     container: {
-        marginTop: "20px"
+        marginTop: "5px"
     },
     detailsCard: {
         backgroundColor: '#EDEFF8',

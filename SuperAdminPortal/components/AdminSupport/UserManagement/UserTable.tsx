@@ -148,11 +148,11 @@ function UserTable({ filters }: UserTableProps) {
                                     sx={userTableStyles.headerCheckbox}
                                 />
                             </TableCell>
-                            <TableCell sx={userTableStyles.userColumnCell}>User</TableCell>
+                            <TableCell align="center" sx={userTableStyles.userColumnCell}>User</TableCell>
                             <TableCell sx={userTableStyles.roleColumnCell}>Role</TableCell>
                             <TableCell sx={userTableStyles.lastLoginColumnCell}>Last Login</TableCell>
                             <TableCell sx={userTableStyles.statusColumnCell}>Status</TableCell>
-                            <TableCell align="right" sx={userTableStyles.actionsColumnCell}>Actions</TableCell>
+                            <TableCell align="center" sx={userTableStyles.actionsColumnCell}>Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -208,7 +208,7 @@ function UserTable({ filters }: UserTableProps) {
                                             }}
                                         />
                                     </TableCell>
-                                    <TableCell align="right">
+                                    <TableCell align="center">
                                         <Box sx={userTableStyles.actionsContainer}>
                                             <IconButton size="small" onClick={() => console.log(`Edit user ${user.id}`)}>
                                                 <img src={Edit} alt="Edit" style={userTableStyles.actionIcon} />

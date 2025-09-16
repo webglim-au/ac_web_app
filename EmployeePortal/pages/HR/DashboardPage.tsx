@@ -11,16 +11,7 @@ export function DashboardPage() {
     const theme = useTheme();
     return (
         <ScreenTemplate topItems={HRTopItems} bottomItems={HRBottomItems}>
-            {/* Dashboard Title */}
-            <ScreenHeading
-                title="Dashboard"
-                sx={{
-                    marginLeft: "170px",
-                    "@media (max-width: 1210px)": {
-                        marginLeft: "45px"
-                    }
-                }}
-            />
+
 
             {/* Rest of your code remains the same */}
             <Box sx={dashboardStyles.bodyContainer(theme)}>
