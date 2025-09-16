@@ -1,7 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
-import path from "path";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [
@@ -16,17 +20,34 @@ export default defineConfig({
       include: "**/*.svg?react",
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        employee: resolve(__dirname, "employee.html"),
+        admin: resolve(__dirname, "admin.html"),
+      },
+    },
+  },
   resolve: {
     alias: {
-      "@app": path.resolve(__dirname, "src/app"),
-      "@pages": path.resolve(__dirname, "src/pages"),
-      "@contexts": path.resolve(__dirname, "src/contexts"),
-      "@services": path.resolve(__dirname, "src/services"),
-      "@hooks": path.resolve(__dirname, "src/hooks"),
-      "@components": path.resolve(__dirname, "src/components"),
-      "@utils": path.resolve(__dirname, "src/utils"),
-      "@store": path.resolve(__dirname, "src/store"),
-      "@assets": path.resolve(__dirname, "src/assets"),
+      "@sharedApp": resolve(__dirname, "./shared/app"),
+      "@employeeApp": resolve(__dirname, "./EmployeePortal/app"),
+      "@adminApp": resolve(__dirname, "./SuperAdminPortal/app"),
+      "@sharedPages": resolve(__dirname, "./shared/pages"),
+      "@sharedComponents": resolve(__dirname, "./shared/components"),
+      "@sharedServices": resolve(__dirname, "./shared/services"),
+      "@adminPages": resolve(__dirname, "./SuperAdminPortal/pages"),
+      "@adminComponents": resolve(__dirname, "./SuperAdminPortal/components"),
+      "@adminServices": resolve(__dirname, "./SuperAdminPortal/services"),
+      "@employeePages": resolve(__dirname, "./EmployeePortal/pages"),
+      "@employeeComponents": resolve(__dirname, "./EmployeePortal/components"),
+      "@employeeServices": resolve(__dirname, "./EmployeePortal/services"),
+      "@contexts": resolve(__dirname, "./shared/contexts"),
+      "@hooks": resolve(__dirname, "./shared/hooks"),
+      "@utils": resolve(__dirname, "./shared/utils"),
+      "@store": resolve(__dirname, "./shared/store"),
+      "@assets": resolve(__dirname, "./shared/assets"),
     },
   },
 });
