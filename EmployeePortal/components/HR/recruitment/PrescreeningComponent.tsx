@@ -2,7 +2,7 @@ import React, { useState, useCallback, useMemo } from 'react';
 import { Box } from "@mui/material";
 import ContentSection from '@employeeComponents/HR/recruitment/ContentSection';
 import ArchiveModal from './ArchiveModal';
-import { PrescreeningApplicant, SelectedApplicantPrescreening, } from 'types/HR';
+import { PrescreeningApplicant, SelectedApplicantPrescreening, } from '@shared/types/HR';
 import { INITIAL_PRESCREENING_DATA } from '@utils/DummyData';
 import { HR_REC_JOB_APP_TABLE_COLUMNS } from '@utils/HeaderColumns';
 import ApplicantDetailsComponent from './PrescreeningApplicantDetailsComponent';

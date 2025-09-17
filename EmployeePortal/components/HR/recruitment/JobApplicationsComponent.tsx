@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import ContentSection from '@employeeComponents/HR/recruitment/ContentSection';
 import ArchiveModal from './ArchiveModal';
 import SendPrescreeningModal from './SendPrescreeningFormModal';
-import { Applicant, SelectedApplicant } from '../../../../shared/types/HR/index';
+import { Applicant, SelectedApplicant } from '@shared/types/HR';
 import { HR_REC_JOB_APP_TABLE_COLUMNS } from "@utils/HeaderColumns";
 import { INITIAL_APPLICATIONS_DATA } from "@utils/DummyData";
 

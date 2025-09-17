@@ -12,7 +12,7 @@ import EmailSVGComponent from '@sharedComponents/common/IconComponents/EmailSVGC
 import NotesSVGComponent from '@sharedComponents/common/IconComponents/NotesSVGComponent';
 import styles from './ReferencesComponentStyles';
 import RefereeItem from './RefereeItemComponent';
-import { Referee, ReferenceComponentApplicant } from 'types/HR';
+import { Referee, ReferenceComponentApplicant } from '@shared/types/HR';
 
 export function ReferencesComponent() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -78,25 +78,25 @@ export function ReferencesComponent() {
     const actionButtons = useMemo(() => [
         {
             text: "Actions",
-            color: "black",
+            textColor: "black",
             bgColor: "transparent",
             onClick: handleActions
         },
         {
             text: "Reference Template",
-            color: "#6f2d7a",
+            textColor: "#6f2d7a",
             bgColor: "transparent",
             onClick: handleReferenceTemplate
         },
         {
             text: "Schedule Follow-ups",
-            color: "#6f2d7a",
+            textColor: "#6f2d7a",
             bgColor: "transparent",
             disabled: true
         },
         {
             text: "Edit Notes",
-            color: "white",
+            textColor: "white",
             bgColor: "#6f2d7a",
             startIcon: <NotesSVGComponent />,
             onClick: handleEditNotes,
@@ -104,7 +104,7 @@ export function ReferencesComponent() {
         },
         {
             text: "Send Email",
-            color: "#6f2d7a",
+            textColor: "#6f2d7a",
             bgColor: "white",
             borderColor: "#6f2d7a",
             startIcon: <EmailSVGComponent />,
@@ -203,7 +203,7 @@ export function ReferencesComponent() {
                         fontSize="14px"
                         bgColor={button.bgColor}
                         fontWeight="600"
-                        color={button.color}
+                        textColor={button.textColor}
                         disabled={button.disabled}
                         startIcon={button.startIcon}
                         onClick={button.onClick ? (e) => {

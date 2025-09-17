@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 
 // Send Prescreening Modal Component
-const SendPrescreeningModal = ({ open, onClose, onSend }) => {
+const SendPrescreeningModal = ({ open, onClose, onSend, applicant }) => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
@@ -301,19 +301,7 @@ const SendPrescreeningModal = ({ open, onClose, onSend }) => {
                 </Box>
             </Box>
 
-            {/* CSS Animation */}
-            <style jsx global>{`
-                @keyframes modalFadeIn {
-                    from {
-                        opacity: 0;
-                        transform: scale(0.9);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: scale(1);
-                    }
-                }
-            `}</style>
+
         </Box>
     );
 };

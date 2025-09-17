@@ -7,7 +7,7 @@ export const sidebarStyles = {
     backgroundColor: isSelected ? "primary.main" : "transparent",
     color: isSelected ? "white" : "primary.main",
     "&:hover": {
-      backgroundColor: isSelected? "primary.main" : " transparent",
+      backgroundColor: isSelected? "primary.main" : " white",
       color: isSelected ? "white" : "primary.main",
       cursor: "pointer",
      
@@ -19,6 +19,7 @@ export const sidebarStyles = {
     width: isSmallScreen ? "48px" : "280px", // Adjust width based on screen size
     minHeight: "48px",
     display: "flex",
+ 
     justifyContent: isSmallScreen ? "center" : "flex-start",
   }) as SxProps<Theme>,
 

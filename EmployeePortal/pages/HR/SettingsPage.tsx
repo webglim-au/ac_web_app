@@ -6,7 +6,7 @@ import { HRTopItems, HRBottomItems } from "@utils/sidebarMenuItems";
 // SettingsPage.tsx
 export function SettingsPage() {
     return (
-        <ScreenTemplate topItems={HRTopItems} bottomItems={HRBottomItems}>
+        <ScreenTemplate>
             <ScreenHeading title="Settings" />
             <Box sx={{ p: 2, backgroundColor: "white", borderRadius: 2, m: 2 }}>
                 <Typography>Settings functionality will be implemented here...</Typography>

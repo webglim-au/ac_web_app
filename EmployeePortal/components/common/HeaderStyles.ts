@@ -1,6 +1,6 @@
-import { SxProps, Theme } from "@mui/material";
+import { Theme } from "@mui/material";
 
-export const headerStyles: Record<string, SxProps<Theme>> = {
+export const headerStyles = {
   root: (theme: Theme) => ({
     display: "flex",
     justifyContent: "space-between",

@@ -6,7 +6,7 @@ import { HRTopItems, HRBottomItems } from "@utils/sidebarMenuItems";
 // TrainingsPage.tsx
 export function TrainingsPage() {
     return (
-        <ScreenTemplate topItems={HRTopItems} bottomItems={HRBottomItems}>
+        <ScreenTemplate >
             <ScreenHeading title="Trainings" />
             <Box sx={{ p: 2, backgroundColor: "white", borderRadius: 2, m: 2 }}>
                 <Typography>Training management functionality will be implemented here...</Typography>

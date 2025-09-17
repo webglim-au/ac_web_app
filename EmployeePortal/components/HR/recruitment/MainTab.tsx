@@ -9,7 +9,9 @@ interface TabItem {
     selectedSubTabIndex?: number;
 
 }
-
+interface IProps {
+    color?: string;
+}
 interface MainTabProps {
     tabs: TabItem[];
     onTabClick: (index: number) => void;
@@ -54,12 +56,9 @@ const MainTab: React.FC<MainTabProps> = ({ tabs, onTabClick, onSubTabClick, font
             <Box sx={{ display: 'flex', gap: 1, marginBottom: 2 }}>
                 {tabs.map((tab, index) => {
                     const iconWithColor = tab.selected
-                        ? React.cloneElement(tab.icon, {
-
-                            color: 'white'
-
-                        })
+                        ? React.cloneElement(tab.icon as React.ReactElement<IProps>, { color: "white" })
                         : tab.icon;
+
 
                     return (
                         <Button

@@ -22,7 +22,7 @@ export default function Header() {
     const [showMobileSearch, setShowMobileSearch] = useState(false);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-    const handleOpenMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleOpenMenu = (event: React.MouseEvent<HTMLDivElement>) => {
         setAnchorEl(event.currentTarget);
     };
 

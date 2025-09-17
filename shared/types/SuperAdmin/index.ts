@@ -76,3 +76,32 @@ export interface UserFilters {
 export interface UserTableProps {
     filters: UserFilters;
 }
+
+export interface RoleCardProps {
+    icon: string;
+    title: string;
+    subtitle: string;
+    totalUsers: number;
+    permissions: string[];
+    moreCount?: number;
+    bgColor: string;
+    color: string;
+    border: string;
+}
+export interface RoleTabsProps {
+    activeTab: number;
+    handleTabChange: (event: React.SyntheticEvent, newValue: number) => void;
+    defaultRolesCount: number;
+    filteredCount: number;
+}
+
+export interface SearchFilterProps {
+    searchTerm: string;
+    setSearchTerm: (value: string) => void;
+    statusFilter: string;
+    setStatusFilter: (value: string) => void;
+}
+export interface TabContentProps {
+    activeTab: number;
+    defaultRoles: RoleCardProps[];
+}

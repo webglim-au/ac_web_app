@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import {
     Box,
     List,
-    ListItem,
+    ListItemButton,
     ListItemIcon,
     ListItemText,
     useMediaQuery,
     useTheme,
     SxProps,
     Theme,
+    ListItem,
 
 } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -71,25 +72,27 @@ export default function Sidebar({ topItems, bottomItems }: SidebarProps) {
             return (
                 <ListItem
                     key={item.text}
-                    button
-                    onClick={() => handleItemClick(item)}
+                    disablePadding
                     sx={sidebarStyles.menuItem(isSelected, isSmallScreen)}
                 >
-                    <ListItemIcon sx={sidebarStyles.menuIcon(isSelected)}>
-                        {React.createElement(item.icon, {
-                            color: isSelected ? "#6F2D7A" : "white"
-                        })}
-                    </ListItemIcon>
-                    {!isSmallScreen && (
-                        <ListItemText
-                            primary={item.text}
-                            primaryTypographyProps={sidebarStyles.menuText(
-                                isSelected,
-                                isSmallScreen
-                            )}
-                        />
-                    )}
+                    <ListItemButton onClick={() => handleItemClick(item)}>
+                        <ListItemIcon sx={sidebarStyles.menuIcon(isSelected)}>
+                            {React.createElement(item.icon, {
+                                color: isSelected ? "#6F2D7A" : "white",
+                            })}
+                        </ListItemIcon>
+                        {!isSmallScreen && (
+                            <ListItemText
+                                primary={item.text}
+                                sx={sidebarStyles.menuText(
+                                    isSelected,
+                                    isSmallScreen
+                                )}
+                            />
+                        )}
+                    </ListItemButton>
                 </ListItem>
+
             );
         });
 

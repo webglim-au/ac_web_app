@@ -5,7 +5,7 @@ import StatusChip from '@sharedComponents/common/StatusChip';
 import StickyNote from '@sharedComponents/common/StickyNote';
 import CalendarIcon from '@sharedComponents/common/IconComponents/CalendarIcon';
 import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
-import { NoteData, ApplicantDetailsProps } from 'types/HR';
+import { NoteData, ApplicantDetailsProps } from "@shared/types/HR";
 import BorderlessTextFieldPrescreening from './BorderlessTextFieldPrescreening';
 import { PRESCREENING_STATUSES } from '@utils/Constants';
 import STYLES from "./PrescreeningApplicantDetailsStyles"
@@ -151,7 +151,7 @@ const ApplicantDetailsComponent = ({ rowData, rowIndex }: ApplicantDetailsProps)
                                 <CustomButton
                                     text="Cancel"
                                     borderColor="#6f2d7a"
-                                    color="#6f2d7a"
+                                    textColor="#6f2d7a"
                                     fontWeight="600"
                                     bgColor="transparent"
                                     fontSize="12px"
@@ -162,7 +162,7 @@ const ApplicantDetailsComponent = ({ rowData, rowIndex }: ApplicantDetailsProps)
                                 <CustomButton
                                     text="Reschedule"
                                     borderColor="none"
-                                    color="#fff"
+                                    textColor="#fff"
                                     fontWeight="600"
                                     bgColor="#6f2d7a"
                                     fontSize="12px"

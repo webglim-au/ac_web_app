@@ -62,7 +62,7 @@ const LoginPage = () => {
             <VerificationComponent
                 email={email}
                 onBack={showLogin}
-                onVerify={(code) => handleVerification(code, false)} // Pass source directly
+                onVerify={(code) => handleVerification(code, false, userType)} // Pass source directly
                 onResend={handleResend}
             />
         );

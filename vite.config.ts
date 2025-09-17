@@ -32,6 +32,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@sharedApp": resolve(__dirname, "./shared/app"),
+      "@shared": resolve(__dirname, "./shared"),
+      "@employee": resolve(__dirname, "./EmployeePortal"),
+      "@admin": resolve(__dirname, "./SuperAdminPortal"),
       "@employeeApp": resolve(__dirname, "./EmployeePortal/app"),
       "@adminApp": resolve(__dirname, "./SuperAdminPortal/app"),
       "@sharedPages": resolve(__dirname, "./shared/pages"),

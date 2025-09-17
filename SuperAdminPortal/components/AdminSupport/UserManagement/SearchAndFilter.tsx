@@ -136,7 +136,7 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                                 <img src={AddUserSVG} alt="Add User" />
                             </IconButton>}
                             bgColor='#6F2D7A'
-                            color='white'
+                            textColor='white'
                             onClick={() => setAddUserModalOpen(true)} // Change this line
                             sx={searchFilterStyles.addButton}
                         />
@@ -146,7 +146,7 @@ function SearchAndFilter({ onFiltersChange }: { onFiltersChange: (filters: { sea
                                 <img src={ExportSVG} alt="Export" />
                             </IconButton>}
                             bgColor='white'
-                            color='#374151'
+                            textColor='#374151'
                             hoverBgColor="#F3F4F6"
                             borderColor='#D1D5DB'
                             onClick={() => alert('Export clicked')}

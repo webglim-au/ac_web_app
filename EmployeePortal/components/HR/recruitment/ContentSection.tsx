@@ -33,7 +33,7 @@ interface Column {
 
 interface ContentSectionProps {
     title: string;
-    columns: Column[];
+    columns: readonly Column[];
     data: any[];
     searchPlaceholder?: string;
     onSearch?: (searchTerm: string) => void;

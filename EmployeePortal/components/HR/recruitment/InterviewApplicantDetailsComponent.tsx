@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Box, Card, CardContent, Divider } from "@mui/material";
 import StickyNote from '@sharedComponents/common/StickyNote';
 import styles from "./InterviewsStyles";
-import { ApplicantDetailsInterviewProps } from "types/HR";
+import { ApplicantDetailsInterviewProps } from "@shared/types/HR";
 import SkillsSection from "./InterviewSkillsComponent";
 import InterviewScheduleSection from './InterviewScheduleSection';
 import ActionButtonsSection from './InterviewsActionButtonsSection';

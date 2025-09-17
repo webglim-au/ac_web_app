@@ -9,7 +9,7 @@ import EmailIcon from '@sharedComponents/common/IconComponents/EmailIcon';
 import DetailedNotes from "@sharedComponents/common/DetailedNotes";
 import styles from './ReferencesComponentStyles';
 
-import { RefereeItemProps } from 'types/HR';
+import { RefereeItemProps } from '@shared/types/HR';
 
 // Referee Item Component
 const RefereeItem: React.FC<RefereeItemProps> = ({

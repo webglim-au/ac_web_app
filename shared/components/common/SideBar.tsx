@@ -8,6 +8,7 @@ import {
     ListItemText,
     useMediaQuery,
     useTheme,
+    ListItemButton,
     SxProps,
     Theme,
 
@@ -71,29 +72,31 @@ export default function Sidebar({ topItems, bottomItems }: SidebarProps) {
             return (
                 <ListItem
                     key={item.text}
-                    button
-                    onClick={() => handleItemClick(item)}
+                    disablePadding
+
                     sx={sidebarStyles.menuItem(isSelected, isSmallScreen)}
                 >
-                    <ListItemIcon sx={sidebarStyles.menuIcon(isSelected)}>
-                        {
-                            isSelected ? React.createElement(item.icon, {
-                                color: "white"
-                            }) : React.createElement(item.icon, {
-                                color: "#4B5563"
-                            })
-                        }
+                    <ListItemButton onClick={() => handleItemClick(item)}>
+                        <ListItemIcon sx={sidebarStyles.menuIcon(isSelected)}>
+                            {
+                                isSelected ? React.createElement(item.icon, {
+                                    color: "white"
+                                }) : React.createElement(item.icon, {
+                                    color: "#4B5563"
+                                })
+                            }
 
-                    </ListItemIcon>
-                    {!isSmallScreen && (
-                        <ListItemText
-                            primary={item.text}
-                            primaryTypographyProps={sidebarStyles.menuText(
-                                isSelected,
-                                isSmallScreen
-                            )}
-                        />
-                    )}
+                        </ListItemIcon>
+                        {!isSmallScreen && (
+                            <ListItemText
+                                primary={item.text}
+                                sx={sidebarStyles.menuText(
+                                    isSelected,
+                                    isSmallScreen
+                                )}
+                            />
+                        )}
+                    </ListItemButton>
                 </ListItem>
             );
         });

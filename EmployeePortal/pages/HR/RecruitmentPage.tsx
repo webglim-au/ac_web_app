@@ -66,18 +66,18 @@ export function RecruitmentPage() {
     };
 
     // --- DYNAMIC RENDER LOGIC ---
-    const renderContent = (searchTerm: string, setSearchTerm: any) => {
+    const renderContent = () => {
         const selectedTab = tabs.find(tab => tab.selected);
         if (!selectedTab) return null;
 
         if (selectedTab.label === "Applications") {
             switch (selectedTab.selectedSubTabIndex) {
-                case 0: return <JobApplicationsComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
-                case 1: return <PrescreeningComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
-                case 2: return <InterviewsComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
-                case 3: return <ReferencesComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
-                case 4: return <BlacklistedComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
-                case 5: return <ArchivedComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />;
+                case 0: return <JobApplicationsComponent />;
+                case 1: return <PrescreeningComponent />;
+                case 2: return <InterviewsComponent />;
+                case 3: return <ReferencesComponent />;
+                case 4: return <BlacklistedComponent />;
+                case 5: return <ArchivedComponent />;
                 default: return null;
             }
         }

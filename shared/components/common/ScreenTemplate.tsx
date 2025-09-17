@@ -7,6 +7,7 @@ import { screenTemplateStyles } from "./ScreenTemplatesStyles";
 import { AdminTopItems } from "@utils/sidebarMenuItems";
 interface ScreenProps {
     children: ReactNode;
+
 }
 
 export default function ScreenTemplate({ children }: ScreenProps) {

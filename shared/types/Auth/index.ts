@@ -5,7 +5,7 @@ export interface ForgotPasswordComponentProps {
 
 export interface LoginComponentProps {
     onForgotPassword: () => void;
-    onLogin: (email: string, password: string, remember: boolean) => void;
+    onLogin: (email: string, password: string, remember: boolean, userType: string) => void;
 }
 
 export interface NewPasswordComponentProps {

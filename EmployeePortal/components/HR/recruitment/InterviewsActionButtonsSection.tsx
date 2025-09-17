@@ -9,7 +9,7 @@ const ActionButtonsSection = () => (
         <CustomButton
             text="Send Interview Email"
             borderColor="none"
-            color="#6f2d7a"
+            textColor="#6f2d7a"
             fontWeight="600"
             bgColor="transparent"
             fontSize="12px"
@@ -19,7 +19,7 @@ const ActionButtonsSection = () => (
         <CustomButton
             text="Reschedule"
             borderColor="none"
-            color="black"
+            textColor="black"
             fontWeight="600"
             bgColor="transparent"
             fontSize="12px"

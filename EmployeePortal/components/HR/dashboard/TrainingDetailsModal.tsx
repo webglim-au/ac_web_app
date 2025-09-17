@@ -8,7 +8,6 @@ import {
     FormControl,
     Select,
     MenuItem,
-    Grid,
 } from "@mui/material";
 import { trainingModalStyles } from "./TrainingDetailsModelStyles";
 
@@ -87,38 +86,42 @@ export default function TrainingDetailsModal({
     ];
 
     const renderField = (config: FieldConfig, index: number) => {
-        const gridSize = config.fullWidth ? 12 : 6;
         const fieldStyle = config.fullWidth ? trainingModalStyles.descriptionField : trainingModalStyles.textField;
 
         return (
-            <Grid item xs={gridSize} key={index}>
-                <Box sx={config.fullWidth ? undefined : trainingModalStyles.fieldContainer}>
-                    <Typography variant="body2" sx={trainingModalStyles.fieldLabel}>
-                        {config.label}
-                    </Typography>
-                    {config.type === 'select' ? (
-                        <FormControl sx={fieldStyle} size="small">
-                            <Select value={config.value} displayEmpty>
-                                {config.options?.map((option) => (
-                                    <MenuItem key={option.value} value={option.value}>
-                                        {option.label}
-                                    </MenuItem>
-                                ))}
-                            </Select>
-                        </FormControl>
-                    ) : (
-                        <TextField
-                            sx={fieldStyle}
-                            value={config.value}
-                            variant="outlined"
-                            size="small"
-                            multiline={config.multiline}
-                            rows={config.rows}
-                            InputProps={{ readOnly: true }}
-                        />
-                    )}
-                </Box>
-            </Grid>
+            <Box
+                key={index}
+                sx={{
+                    width: config.fullWidth ? '100%' : '48%',
+                    marginBottom: 2,
+                    ...(config.fullWidth ? undefined : trainingModalStyles.fieldContainer)
+                }}
+            >
+                <Typography variant="body2" sx={trainingModalStyles.fieldLabel}>
+                    {config.label}
+                </Typography>
+                {config.type === "select" ? (
+                    <FormControl sx={fieldStyle} size="small">
+                        <Select value={config.value} displayEmpty>
+                            {config.options?.map((option) => (
+                                <MenuItem key={option.value} value={option.value}>
+                                    {option.label}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
+                ) : (
+                    <TextField
+                        sx={fieldStyle}
+                        value={config.value}
+                        variant="outlined"
+                        size="small"
+                        multiline={config.multiline}
+                        rows={config.rows}
+                        InputProps={{ readOnly: true }}
+                    />
+                )}
+            </Box>
         );
     };
 
@@ -138,9 +141,16 @@ export default function TrainingDetailsModal({
                         Training Information
                     </Typography>
 
-                    <Grid container spacing={2}>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-between',
+                            gap: 1
+                        }}
+                    >
                         {fieldConfigs.map((config, index) => renderField(config, index))}
-                    </Grid>
+                    </Box>
                 </Box>
 
                 {/* Action Buttons */}

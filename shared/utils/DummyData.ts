@@ -155,7 +155,7 @@ export const mockUsersManagement = [
 ];
 
 
-import { Applicant, PrescreeningApplicant,ArchivedApplicant} from '../types/HR';
+import { Applicant, PrescreeningApplicant,ArchivedApplicant} from '@shared/types/HR';
 export const INITIAL_APPLICATIONS_DATA: Applicant[] = [
     {
         id: 1,

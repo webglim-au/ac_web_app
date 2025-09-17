@@ -185,18 +185,19 @@ const ArchiveModal = ({ open, onClose, onArchive }: any) => {
             </DialogContent>
 
             {/* CSS Animation */}
-            <style jsx global>{`
-                @keyframes modalFadeIn {
-                    from {
-                        opacity: 0;
-                        transform: scale(0.9);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: scale(1);
-                    }
-                }
-            `}</style>
+            <style>{`
+    @keyframes modalFadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+`}</style>
+
         </Dialog>
     );
 };

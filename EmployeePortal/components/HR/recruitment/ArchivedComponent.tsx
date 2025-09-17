@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import ContentSection from '@employeeComponents/HR/recruitment/ContentSection';
 import { INITIAL_ARCHIVED_DATA } from "@utils/DummyData";
 import { HR_REC_ARCHIVED_TABLE_COLUMNS } from "@utils/HeaderColumns";
-import { ArchivedApplicant } from '../../../../shared/types/HR';
+import { ArchivedApplicant } from '@shared/types/HR';
 const ROWS_PER_PAGE = 4;
 const SEARCH_PLACEHOLDER = "Search";
 
