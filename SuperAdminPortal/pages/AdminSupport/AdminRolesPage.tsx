@@ -22,7 +22,7 @@ const adminRolesPageStyles = {
 
 export function AdminRolesPage() {
     const [searchTerm, setSearchTerm] = useState('');
-    const [statusFilter, setStatusFilter] = useState('all');
+    const [statusFilter, setStatusFilter] = useState('');
     const [activeTab, setActiveTab] = useState(0);
 
     const defaultRoles: RoleCardProps[] = [

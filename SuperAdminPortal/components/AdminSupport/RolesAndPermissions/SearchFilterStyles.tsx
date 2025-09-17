@@ -25,7 +25,7 @@ const searchFilterStyles = {
     select: {
         '& .MuiSelect-select': {
             display: 'flex',
-            width: "100%",
+
             alignItems: 'center',
             minHeight: 'unset',
         }

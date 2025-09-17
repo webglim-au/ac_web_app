@@ -21,7 +21,7 @@ export const SearchFilter: React.FC<SearchFilterProps> = ({
 }) => {
     const getInputLabelStyle = (value: string) => ({
         ...searchFilterStyles.inputLabel,
-        transform: value ? 'translate(14px, -6px) scale(0.75)' : 'translate(14px, 9px) scale(1)',
+        transform: value?.length !== 0 ? 'translate(14px, -6px) scale(0.75)' : 'translate(14px, 9px) scale(1)',
         transformOrigin: 'top left',
         transition: 'transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms',
     });
@@ -40,8 +40,17 @@ export const SearchFilter: React.FC<SearchFilterProps> = ({
 
                 <FormControl sx={searchFilterStyles.formControl}>
                     <InputLabel
-                        shrink={!!statusFilter}
-                        sx={getInputLabelStyle(statusFilter)}
+                        //shrink={(statusFilter?.length !== 0)}
+                        sx={{
+                            backgroundColor: statusFilter ? "#f9fafb" : "white",
+                            paddingLeft: "10px",
+                            color: "black",
+                            paddingRight: "10px",
+                            zIndex: 100,
+                            transform: statusFilter ? 'translate(14px, -6px) scale(0.75)' : 'translate(14px, 9px) scale(1)',
+                            transformOrigin: 'top left',
+                            transition: 'transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms',
+                        }}
                     >
                         Status
                     </InputLabel>
